@@ -10,7 +10,7 @@ pipeline {
 
         stage ('Build image') {
             steps {
-                sh 'docker build -t httpd:latest .'
+                sh 'docker build -t httpd:latest /var/lib/jenkins/workspace/docker-assign-1'
             }
         }
 
